@@ -83,12 +83,11 @@ train = [
 "Bug Tracker" = "https://github.com/facebookresearch/sam3/issues"
 
 [tool.setuptools]
+packages = {find = {where = ["."]}}
 include-package-data = true
 
 [tool.setuptools.package-data]
 "*" = ["*.txt.gz", "*.png", "*.jpg", "*.gif"]
-
-packages = {find = {where = ["."]}}
 
 [tool.setuptools.dynamic]
 version = {attr = "sam3.__version__"}
